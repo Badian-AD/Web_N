@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Росинка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        input[type="text"], 
+        input[type="password"], 
+        input[type="email"], 
+        textarea {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"], 
+        input[type="button"] {
+            padding: 5px 15px;
+            background-color: #ff8000;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, 
+        input[type="button"]:hover {
+            background-color: #e67300;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .product-item {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px;
+            background: white;
+            text-align: center;
+        }
+        .product-item img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <table border="0" width="900" cellpadding="0" cellspacing="0" align="center" bgcolor="#ff8000">
+        <tr>
+            <td width="150" align="center"><img src="images/logo.png" alt="Логотип Росинка" height="50"></td>
+            <td align="center"><h1>РОСИНКА</h1></td>
+            <td width="200">
+                <table cellpadding="5" width="100%">
+                    <tr>
+                        <td align="right"><input type="text" placeholder="логин"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><input type="password" placeholder="пароль"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><input type="submit" value="войти">&nbsp;<a href="register.html">регистрация</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Навигационное меню -->
+    <table border="0" width="900" cellpadding="5" cellspacing="0" align="center">
+        <tr>
+            <td align="center"><a href="index.html">Главная</a></td>
+            <td align="center"><a href="catalog.html">Каталог</a></td>
+            <td align="center"><a href="sales.html">Акции</a></td>
+            <td align="center"><a href="contacts.html">Контакты</a></td>
+         
+        </tr>
+    </table>
+
+    <hr width="900" align="center">
+
+    <!-- Основное содержание -->
+    <table border="0" width="900" cellpadding="5" cellspacing="0" align="center">
+        <tr>
+            <!-- Боковое меню -->
+            <td width="150" valign="top" align="center" bgcolor="#ff8000">
+                <a href="index.html">О нас</a><br>
+                <a href="history.html">История</a><br>
+                <a href="staff.html">Сотрудники</a><br>
+                <a href="delivery.html">Доставка</a>
+            </td>
+            
+            <!-- Основной контент -->
+            <td valign="top">
+                <h1 align="center">Каталог Напитков</h1>
+                
+                <table width="100%" cellpadding="10" cellspacing="10">
+                    <tr>
+                        <td class="product-item">
+                            <a href="product1.html">
+                                <img src="https://avatars.mds.yandex.net/i?id=0659f681d4efd71e11d946a8fda05d40_l-8897118-images-thumbs&n=13" alt="Газированные напитки" width="200">
+                                <h3>Газированные напитки</h3>
+                                
+                            </a>
+                        </td>
+                        <td class="product-item">
+                            <a href="product2.html">
+                                <img src="https://i.ytimg.com/vi/WWrE_XSV8XA/maxresdefault.jpg" alt="Соки " width="200">
+                                <h3>
+                           Соки
+                               
+                                </h3>
+                                
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="product-item">
+                            <a href="#">
+                                <img src="https://avatars.mds.yandex.net/i?id=9e12db66077b0e90fb411460bc5b0488_l-5235137-images-thumbs&n=13" alt="Кофейные напитки" width="200">
+                                <h3>Кофейные напитки </h3>
+                        
+                            </a>
+                        </td>
+                        <td class="product-item">
+                            <a href="#">
+                                <img src="https://p1.zoon.ru/preview/T8QIN8KEIj4aAH_AE6WCFQ/800x800x85/1/e/8/original_5c3cb14ec31a2849ee1e5279_5c4076052b1f8.jpg" alt="Молочные напитки" width="200">
+                                <h3>Молочные напитки</h3>
+                          
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            
+            <!-- Баннеры -->
+            <td width="190" valign="top" align="center" bgcolor="#ff8000">
+                <a href="sales.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXC7QXMojWn33uioDe8Q0HNVbrI8cWenDsg&sg" width="170"></a><br><br>
+                <p>Акция 30%</p>
+                <a href="catalog.html"><img src="https://i.pinimg.com/originals/62/73/ae/6273ae947c24829ba5afe3d0af6ccdb2.jpg" width="170"></a><br><br>
+                <p>Новинки</p>
+                <a href="sales.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXC7QXMojWn33uioDe8Q0HNVbrI8cWenDsg&s" width="170"></a>
+                <p>Распродажа</p>
+            </td>
+        </tr>
+    </table>
+    
+    <!-- Подвал -->
+ 
+</body>
+</html>
