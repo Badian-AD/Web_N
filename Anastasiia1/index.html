@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерьер - магазин мебели</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea,
+        input[type="search"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            padding: 5px 15px;
+            background-color: #ff8000;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+            input[type="submit"]:hover,
+            input[type="button"]:hover {
+                background-color: #e67300;
+            }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        .catalog-items {
+            width: 100%;
+        }
+
+            .catalog-items td {
+                text-align: center;
+                vertical-align: top;
+                padding: 10px;
+            }
+    </style>
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <table border="0" width="900" cellpadding="0" cellspacing="0" align="center" bgcolor="#ff8000">
+        <tr>
+            <td width="150" align="center"><img src="images/logo.png" alt="Логотип Интерьер" height="50"></td>
+            <td align="center"><h1>ИНТЕРЬЕР</h1></td>
+            <td width="200">
+                <table cellpadding="5" width="100%">
+                    <tr>
+                        <td align="right"><input type="text" placeholder="логин"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><input type="password" placeholder="пароль"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><input type="submit" value="войти">&nbsp;<a href="#">регистрация</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Навигационное меню -->
+    <table border="0" width="900" cellpadding="5" cellspacing="0" align="center">
+        <tr>
+            <td align="center"><a href="index.html">Главная</a></td>
+            <td align="center"><a href="catalog.html">Каталог</a></td>
+            <td align="center"><a href="sales.html">Акции</a></td>
+            <td align="center"><a href="contacts.html">Контакты</a></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <!-- Поисковая форма -->
+    <table border="0" width="900" align="center">
+        <tr>
+            <td align="center">
+                <form name="f1" method="post" action="search.php">
+                    <input type="search" name="search_q" placeholder="Введите первую букву товара"><br><br>
+                    <input type="submit" value="Поиск"><br>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Основное содержание -->
+    <table border="0" width="900" cellpadding="5" cellspacing="0" align="center">
+        <tr>
+            <!-- Боковое меню -->
+            <td width="150" valign="top" align="center" bgcolor="#ff8000">
+                <a href="index.html">О нас</a><br>
+                <a href="history.html">История</a><br>
+                <a href="staff.html">Сотрудники</a><br>
+                <a href="delivery.html">Доставка</a>
+            </td>
+
+            <!-- Основной контент -->
+            <td valign="top">
+                <h1 align="center">Добро пожаловать в Интерьер!</h1>
+                <p>
+                    <img src="https://zvet-mebeli.ru/sfiles/lists/11_4_18059_0.webp" align="left" alt="Интерьрер" style="margin-right: 15px; width: 200px; height: 200px;">
+                    Интернет-магазин Интерьер предлагает широкий ассортимент мебели . Мы держим планку для наших покупателей.
+                </p>
+                <p>
+                    В нашем каталоге вы найдете <b>модели на любой вкус</b> - от тумбочки до шкафа. Мы сотрудничаем только с проверенными производителями, поэтому гарантируем <i>качество</i> каждого изделия.
+                </p>
+
+                <h2>Наши преимущества:</h2>
+                <table border="3" cellpadding="20" cellspacing="5">
+                    <tr>
+                        <td rowspan="3">Почему мы?</td>
+                        <td colspan="2" align="center">Наши преимущества</td>
+                    </tr>
+                    <tr>
+                        <td>Гарантия качества</td>
+                        <td>Гарантия (2 месяца)</td>
+                    </tr>
+                    <tr>
+                        <td>Доставка</td>
+                        <td>По всей России</td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <h2>Категории товаров:</h2>
+                <ul type="circle">
+                    <li>Мебель для дома</li>
+                    <li>Мебель для офиса</li>
+                    <li>Уличная мебель</li>
+                </ul>
+
+                <h2>Топ брендов:</h2>
+                <ol type="1">
+                    <li>Ikea</li>
+                    <li>Hoff</li>
+                    <li>Edra</li>
+                </ol>
+
+                <h2>Как сделать заказ:</h2>
+                <ol type="1">
+                    <li>Выберите товар</li>
+                    <li>
+                        Оформите заказ
+                        <ol type="a">
+                            <li>Укажите адрес</li>
+                            <li>Выберите способ оплаты</li>
+                        </ol>
+                    </li>
+                    <li>Получите заказ</li>
+                </ol>
+            </td>
+
+            <!-- Баннеры -->
+            <td width="190" valign="top" align="center" bgcolor="#ff8000">
+                <a href="sales.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXC7QXMojWn33uioDe8Q0HNVbrI8cWenDsg&sg" width="170"></a><br><br>
+                <a href="catalog.html"><img src="https://davitamebel.ru/upload/resize_cache/product/400_300_1/5e42ed7e-5c24-11ee-852a-00155d00bf04__0000068802_monako-902.07/photo_00__0000068802_monako-902.07_tumba-prikrovatnaya.jpg?1717420005" width="170"></a><br><br>
+                <a href="sales.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNXC7QXMojWn33uioDe8Q0HNVbrI8cWenDsg&s" width="170"></a>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
